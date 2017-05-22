@@ -38,8 +38,8 @@ Another way to get your chat ID directly is described below. Start your Python i
 $ python3
 >>> import telegram
 >>> bot = telegram.Bot(token='YOUR_API_TOKEN')
->>> chat_id = bot.getUpdates()[-1].message.chat_id
->>> print(chat_id)
+>>> bot.getUpdates()
+>>> print(bot.id)
 123456789
 ```
 
